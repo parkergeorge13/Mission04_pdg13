@@ -21,6 +21,7 @@ namespace Mission04_pdg13
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //Calls the wwwroot folder and shows the app
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
