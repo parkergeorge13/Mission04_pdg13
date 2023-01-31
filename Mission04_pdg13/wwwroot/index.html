@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Parker's Website</title>
+    <link rel="icon" type="image/x-icon" href="img/pg4.png" />
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <div class="pg-nav">
+            <div class="container">
+                <div class="column">
+                    <a class="navbar-brand" href="#page-top"><h2>Parker George</h2></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#calc">Grade Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pg-body">
+        <p>
+            I'm excited to learn ASP.Net in IS 413! It will be my first strongly typed language which I think adds one of the finishing touches I'm looking for to complete my resume.
+            During this semester I hope to learn more about the intricacies of web development. I have started a web development business and feel like more training could be critical
+            to this venture's success.
+        </p>
+        <img src="img/pg.JPG" />
+        <h3>Top #3 Dream Jobs After Graduation:</h3>
+        <ol>
+            <li>Solutions Architect</li>
+            <li>Software Engineer</li>
+            <li>Database Manager</li>
+        </ol>
+        <h3 id="calc">Grade Calculator:</h3>
+        <div class="pg-text-centered">
+            <form>
+                <div class="row">
+                    <div class="column">
+                        <label>Assignnments:</label>
+                        <input id="txtAssignments" /><br />
+                        <label>Group Project:</label>
+                        <input id="txtProject" /><br />
+                        <label>Quizzes:</label>
+                        <input id="txtQuizzes" /><br />
+                        <label>Midterm Exam:</label>
+                        <input id="txtMidExam" /><br />
+                        <label>Final Exam:</label>
+                        <input id="txtFinalExam" /><br />
+                        <label>Intex:</label>
+                        <input id="txtIntex" /><br /><br />
+                    </div>
+                    <div class="column">
+                        <br /><br />
+                        <h5>Final Grade Percentage:</h5>
+                        <p id="GradePercent"></p>
+                        <br /><br />
+                        <h5>Final Letter Grade:</h5>
+                        <p id="GradeLetter"></p>
+                    </div>
+                </div>
+                <input id="btnSend" type="button" value="Calculate Final Grade" />
+            </form>
+        </div>
+    </div>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="js/Grade.js"></script>
+</body>
+</html>
